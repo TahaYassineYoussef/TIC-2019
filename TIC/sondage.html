@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Sondage</title>
+<script language=javascript src="controle.js">
+
+</script>
+</head>
+
+<body>
+
+<form name="f" method="POST" action="sondage.php" onsubmit="return test()">
+	<fieldset style="padding: 2">
+	<legend>Sondage</legend>
+	Authentification / Inscription:<table border="0" width="100%">
+		<tr>
+			<td width="108">@Mail </td>
+			<td>:&nbsp;&nbsp;&nbsp; <input type="text" name="T1" size="20"></td>
+		</tr>
+		<tr>
+			<td width="108">Mot de passe</td>
+			<td>:&nbsp;&nbsp;&nbsp; <input type="text" name="T2" size="20"></td>
+		</tr>
+		<tr>
+			<td width="108">Genre</td>
+			<td>:&nbsp;&nbsp;&nbsp; <select size="1" name="D1">
+			<option selected>Indiquer votre genre</option>
+			<option value="M">Masculin</option>
+			<option value="F">Féminin</option>
+			</select></td>
+		</tr>
+	</table>
+	<p>Les réseau sociaux:</p>
+	<table border="0" width="100%">
+		<tr>
+			<td>N°</td>
+			<td>Question / Affirmation</td>
+			<td>Oui</td>
+			<td>Non</td>
+			<td>Sans avis</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Les informations partagées sur les réseaux sociaux sont fiables</td>
+			<td><input type="radio" value="1O" name="R1"></td>
+			<td><input type="radio" value="1N" name="R1"></td>
+			<td><input type="radio" value="1S" name="R1"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>L'usage des réseaux sociaux par les enfants doit être sous le 
+			contrôle parental</td>
+			<td><input type="radio" value="2O" name="R2"></td>
+			<td><input type="radio" value="2N" name="R2"></td>
+			<td><input type="radio" value="2S" name="R2"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Les réseaux sociaux deviennent une nécessité pour les citoyens</td>
+			<td><input type="radio" value="3O" name="R3"></td>
+			<td><input type="radio" value="3N" name="R3"></td>
+			<td><input type="radio" value="3S" name="R3"></td>
+		</tr>
+	</table>
+	<p align="center"><input type="reset" value="Annuler" name="B2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" value="Envoyer" name="B1"></p>
+	<p>&nbsp;</p>
+	</fieldset><p>&nbsp;</p>
+	<p>&nbsp;</p>
+</form>
+
+</body>
+
+</html>
